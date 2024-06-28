@@ -1,3 +1,4 @@
+import {cart} from '../data/cart.js'
 
 let productsHTML = '';
 products.forEach((product)=>{
@@ -56,7 +57,7 @@ products.forEach((product)=>{
 
 
 });
-
+const addedMessageTimeouts = {};
 
 document.querySelector('.js-products-grid').innerHTML = productsHTML;
 
